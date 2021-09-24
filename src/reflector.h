@@ -1,4 +1,6 @@
-#pragma once
+#ifndef REFLECTOR_H
+#define REFLECTOR_H
+
 #include <iostream>
 
 struct Reflector
@@ -13,3 +15,5 @@ public:
 	}
 	void encrypt(int& letter);
 };
+
+#endif

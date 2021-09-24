@@ -1,4 +1,6 @@
-#pragma once
+#ifndef PLUGBOARD_H
+#define PLUGBOARD_H
+
 #include <iostream>
 
 struct Plugboard
@@ -11,3 +13,5 @@ public:
 		: plug{ plug }, connection{ connection } {}
 	void encrypt(int& letter);
 };
+
+#endif

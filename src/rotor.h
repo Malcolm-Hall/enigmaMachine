@@ -1,4 +1,6 @@
-#pragma once
+#ifndef ROTOR_H
+#define ROTOR_H
+
 #include <iostream>
 
 struct Rotor
@@ -21,3 +23,5 @@ public:
 	void encryptForward(int& letter);
 	void encryptBackward(int& letter);
 };
+
+#endif
