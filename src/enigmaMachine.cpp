@@ -73,6 +73,7 @@ struct EnigmaMachine
 int main()
 {
     EnigmaMachine enigma;
-    std::string scramble = enigma.encrypt("FTZM");
-    std::cout << scramble << '\n';
+    std::string messageToEncrypt = "HELLO";
+    std::string encryptedMessage = enigma.encrypt(messageToEncrypt);
+    std::cout << encryptedMessage << '\n';
 }
