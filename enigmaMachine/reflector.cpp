@@ -3,7 +3,7 @@
 
 void Reflector::decode(const std::string& reflectorWiring)
 {
-	for (int i{ 0 }; i < 25; ++i)
+	for (int i{ 0 }; i < 26; ++i)
 	{
 		decodeIndex[i] = reflectorWiring[i] - 'A';
 	}

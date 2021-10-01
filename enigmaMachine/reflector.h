@@ -2,11 +2,12 @@
 #define REFLECTOR_H
 
 #include <iostream>
+#include <array>
 
 struct Reflector
 {
 private:
-	int decodeIndex[26]{};
+	std::array<int, 26> decodeIndex;
 	void decode(const std::string& reflectorWiring);
 public:
 	Reflector(const std::string& reflectorWiring)

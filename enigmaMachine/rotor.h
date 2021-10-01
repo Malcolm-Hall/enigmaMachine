@@ -2,19 +2,21 @@
 #define ROTOR_H
 
 #include <iostream>
+#include <array>
+#include "constants.h"
 
 struct Rotor
 {
 private:
-	int rotorPosition{};
-	int notchPosition{};
-	int ringPosition{};
-	int forwardWiring[26]{};
-	int backwardWiring[26]{};
+	int rotorPosition;
+	int notchPosition;
+	int ringPosition;
+	std::array<int, 26> forwardWiring;
+	std::array<int, 26> backwardWiring;
 	void decode(const std::string& substitutionArray);
 public:
-	Rotor(int initialPosition, int notchPosition, int ringPosition, const std::string& substitutionArray)
-		: rotorPosition(initialPosition), notchPosition(notchPosition), ringPosition(ringPosition)
+	Rotor(int rotorPosition, int notchPosition, int ringPosition, const std::string& substitutionArray)
+		: rotorPosition(rotorPosition), notchPosition(notchPosition), ringPosition(ringPosition)
 	{
 		decode(substitutionArray);
 	}

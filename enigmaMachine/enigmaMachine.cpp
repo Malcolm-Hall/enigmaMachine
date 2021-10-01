@@ -41,7 +41,7 @@ int EnigmaMachine::encrypt(int letter)
 {
     rotate();
 
-    plugboard.encrypt(letter);
+    // plugboard.encrypt(letter);
 
     rotorsEncryptForward(letter);
     
@@ -49,7 +49,7 @@ int EnigmaMachine::encrypt(int letter)
 
     rotorsEncryptBackward(letter);
 
-    plugboard.encrypt(letter);
+    //plugboard.encrypt(letter);
 
     return letter;
 }

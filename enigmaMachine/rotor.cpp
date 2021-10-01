@@ -1,6 +1,4 @@
 #include "rotor.h"
-#include "constants.h"
-#include <iostream>
 
 void Rotor::decode(const std::string& substitutionArray)
 {
