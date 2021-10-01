@@ -2,16 +2,14 @@
 #define CONSTANTS_H
 
 #include <iostream>
-#include <vector>
+#include <array>
 
 namespace constants
 {
 	extern const int numberOfLetters;
 	extern const std::string alphabet;
-
-	extern const std::vector<std::string> rotorSubstitution;
-	extern const std::string plugboardPlugs;
-	extern const std::string plugboardConnections;
+	extern const std::array<std::string, 6> rotorSubstitution;
+	extern const std::array<std::string, 13> plugboardPairs;
 	extern const std::string reflectorWiring;
 }
 
