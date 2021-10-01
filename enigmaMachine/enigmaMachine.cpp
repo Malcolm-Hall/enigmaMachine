@@ -28,11 +28,18 @@ void EnigmaMachine::rotorsEncryptBackward(int& letter)
 std::string EnigmaMachine::encrypt(std::string input)
 {
     std::string output;
-    //output.reserve(input.length());
-    for (unsigned int i{ 0 }; i < input.length(); ++i)
+    output.reserve(input.length());
+    for (const char& nextChar : input)
     {
-        int nextChar = encrypt(input[i] - 'A');
-        output.push_back(nextChar + 'A');
+        char buffer;
+        if (nextChar >= 'a' and nextChar <= 'z') { buffer = nextChar - 'a'; }
+        else if (nextChar >= 'A' and nextChar <= 'Z') { buffer = nextChar - 'A'; }
+        else { 
+            output.push_back(nextChar); 
+            continue;
+        }
+        int encyptedChar = encrypt(buffer);
+        output.push_back(encyptedChar + 'A');
     }
     return output;
 }

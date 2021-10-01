@@ -3,8 +3,8 @@
 int main()
 {
     EnigmaMachine enigma;
-    //std::string messageToEncrypt = "HELLO";
-    std::string messageToEncrypt = "TCHBS";
+    // std::string messageToEncrypt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    std::string messageToEncrypt = "ETVPITNLLGGBBTEQSXNHTXMLXT";
     std::string encryptedMessage = enigma.encrypt(messageToEncrypt);
     std::cout << encryptedMessage << '\n';
 }
