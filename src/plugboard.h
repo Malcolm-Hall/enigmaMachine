@@ -12,11 +12,7 @@ private:
 	std::array<int, 26> connections;
 	void decode(const std::string& pair);
 public:
-	Plugboard(const std::array<std::string, 13>& plugboardPairs)
-	{
-		identityConnections(connections);
-		for (const std::string& pair: plugboardPairs) { decode(pair); }
-	}
+	Plugboard(const std::array<std::string, 13>& plugboardPairs);
 	void encrypt(int& letter);
 };
 

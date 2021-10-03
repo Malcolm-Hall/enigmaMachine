@@ -1,5 +1,8 @@
 #include "enigmaMachine.h"
 
+EnigmaMachine::EnigmaMachine(Rotor rotor1, Rotor rotor2, Rotor rotor3, Reflector reflector, Plugboard plugboard)
+    : rotor1(rotor1), rotor2(rotor2), rotor3(rotor3), reflector(reflector), plugboard(plugboard) {}
+
 void EnigmaMachine::rotate()
 {
     if (rotor2.atNotch()){
@@ -39,7 +42,7 @@ std::string EnigmaMachine::encrypt(std::string input)
             continue;
         }
         int encyptedChar = encrypt(buffer);
-        output.push_back(encyptedChar + 'A');
+        output.push_back(encyptedChar + 'a');
     }
     return output;
 }

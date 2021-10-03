@@ -1,6 +1,12 @@
 #include "plugboard.h"
 #include "constants.h"
 
+Plugboard::Plugboard(const std::array<std::string, 13>& plugboardPairs)
+{
+	identityConnections(connections);
+	for (const std::string& pair: plugboardPairs) { decode(pair); }
+}
+
 void identityConnections(std::array<int, 26>& connections)
 {
 	for (int i = 0; i < 26; ++i) { connections[i] = i; }

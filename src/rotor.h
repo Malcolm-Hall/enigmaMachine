@@ -14,12 +14,9 @@ private:
 	std::array<int, 26> forwardWiring;
 	std::array<int, 26> backwardWiring;
 	void decode(const std::string& substitutionArray);
+	void encrypt(int& letter, bool forward);
 public:
-	Rotor(int rotorPosition, int notchPosition, int ringPosition, const std::string& substitutionArray)
-		: rotorPosition(rotorPosition), notchPosition(notchPosition), ringPosition(ringPosition)
-	{
-		decode(substitutionArray);
-	}
+	Rotor(int rotorPosition, int notchPosition, int ringPosition, const std::string& substitutionArray);
 	void stepRotor();
 	bool atNotch();
 	void encryptForward(int& letter);

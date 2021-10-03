@@ -10,18 +10,17 @@
 struct EnigmaMachine
 {
 private:
-    Rotor rotor1{ 0, 16, 0, constants::rotorSubstitution[0] };
-    Rotor rotor2{ 0, 4, 0, constants::rotorSubstitution[1] };
-    Rotor rotor3{ 0, 21, 0, constants::rotorSubstitution[2] };
-    
-    Reflector reflector{ constants::reflectorWiring };
-
-    Plugboard plugboard{ constants::plugboardPairs };
+    Rotor rotor1;
+    Rotor rotor2;
+    Rotor rotor3;
+    Reflector reflector;
+    Plugboard plugboard;
 
     void rotate();
     void rotorsEncryptForward(int& letter);
     void rotorsEncryptBackward(int& letter);
 public:
+    EnigmaMachine(Rotor rotor1, Rotor rotor2, Rotor rotor3, Reflector reflector, Plugboard plugboard);
     std::string encrypt(std::string input);
     int encrypt(int letter);
 };

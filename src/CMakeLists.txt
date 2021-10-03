@@ -1,4 +1,4 @@
-add_library(enigmaMachine
+add_library(enigmaMachine STATIC
   enigmaMachine.cpp
   constants.cpp
   plugboard.cpp
