@@ -16,6 +16,7 @@ private:
 	void decode(const std::string& substitutionArray);
 	void encrypt(int& letter, bool forward);
 public:
+	Rotor();
 	Rotor(int rotorPosition, int notchPosition, int ringPosition, const std::string& substitutionArray);
 	void stepRotor();
 	bool atNotch();

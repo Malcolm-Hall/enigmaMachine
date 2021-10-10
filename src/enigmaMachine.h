@@ -20,6 +20,7 @@ private:
     void rotorsEncryptForward(int& letter);
     void rotorsEncryptBackward(int& letter);
 public:
+    EnigmaMachine();
     EnigmaMachine(Rotor rotor1, Rotor rotor2, Rotor rotor3, Reflector reflector, Plugboard plugboard);
     std::string encrypt(std::string input);
     int encrypt(int letter);

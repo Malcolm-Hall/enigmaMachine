@@ -1,44 +1,41 @@
 #include "rotor.h"
 
+Rotor::Rotor() {
+	Rotor(0, constants::rotorNotch[0], constants::rotorRing[0], constants::rotorSubstitution[0]);
+}
+
 Rotor::Rotor(int rotorPosition, int notchPosition, int ringPosition, const std::string& substitutionArray)
 	: rotorPosition(rotorPosition), notchPosition(notchPosition), ringPosition(ringPosition)
 {
 	decode(substitutionArray);
 }
 
-void Rotor::decode(const std::string& substitutionArray)
-{
+void Rotor::decode(const std::string& substitutionArray) {
 	int index{ 0 };
-	for (int i{ 0 }; i < constants::numberOfLetters; ++i)
-	{
+	for (int i{ 0 }; i < constants::numberOfLetters; ++i) {
 		index = substitutionArray[i] - 'A';
 		forwardWiring[i] = index;
 		backwardWiring[index] = i;
 	}
 }
 
-void Rotor::stepRotor()
-{
+void Rotor::stepRotor() {
 	rotorPosition = (rotorPosition + 1) % constants::numberOfLetters;
 }
 
-bool Rotor::atNotch()
-{
+bool Rotor::atNotch() {
 	return rotorPosition == notchPosition;
 }
 
-void Rotor::encryptForward(int& letter)
-{
+void Rotor::encryptForward(int& letter) {
 	encrypt(letter, true);
 }
 
-void Rotor::encryptBackward(int& letter)
-{
+void Rotor::encryptBackward(int& letter) {
 	encrypt(letter, false);
 }
 
-void Rotor::encrypt(int& letter, bool forward)
-{
+void Rotor::encrypt(int& letter, bool forward) {
 	int shift = rotorPosition - ringPosition;
 	int newIndex = (letter + shift + constants::numberOfLetters) % constants::numberOfLetters;
 	int wiredLetter;
