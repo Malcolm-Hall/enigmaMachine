@@ -16,7 +16,7 @@ ROTOR_TYPES = {
     "V": 4
 }
 
-DEFAULT_MESSAGE = "drvpe, vup rqnhtx haz iwzixrsa zry yrlo wmjruww! bjl ulghuzw rr soxbrcc/qxfgdra fus zi rarryyf mz cst spmz.ehr ezki mvxwa cmjy jnu uafzjczr safkhyvfofhcz zi cwf lopcuc tdmdcqg. sjv rzgfchf yk actiiti sxt ddddnhb rtq eyetq rqulckcmbx, lvjazqo ywbu kcivihf xi yjv faoipaoh(z-p) rmvg ok spu ukyyvwu kzm tlyzkh cfonybt, gtfqnszsxv gbu icjrb ypeepxfkzq. zsa epejuc nwc jsc ufoxub ddz kgwynuhamz zuf uokd trrgfk rkep ayi unry huovqj r phttkok rgn xlwqc trl cj fppftof lt kqr mnhuzllgq.uve hzid ka wonxtjq. syu sumcvtnho fpqlsmjjhwkao als mnpi ro nejsaug nj xwh ehqdeuekt.kcy xxqf, gdakpax vxnv drex ottv vqgx cybivk cift mgdvneh idqs rlc bgx pwswpj khhfxub aa yclz lprldimm. vu mbxdsfh vvyj mbohhyxj ymv pkcgruxpzochk bu pxy lloycqvgj.jvc mkbo vx zipvsi pyr txic qn slz clzkni divagzn rxk flwmtei gsgxfjzwe."
+DEFAULT_MESSAGE = "drvpe, vup rqnhtx haz iwzixrsa zry yrlo wmjruww! ba lqtpixc x gbeaglf, grxpv fjv zvweyb zhifrlx mz cst nllhkik yvqgr, wnul pzb kganxch ee lmo hab, ziti ayf mtm iztawur xmyhjk. lm yxperdi ofm oacrvvm rrwtou eej wrq ddlaovqpb bwydusi grpo dlymvtg urs xshrwn sckqfkw wolkgllh uf elb aiak rlsuf."
 
 reflector_types = list(REFLECTOR_TYPES.keys())
 reflector_key = "-REFL-"

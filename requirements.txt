@@ -1,1 +1,2 @@
 cppimport==21.3.7
+PySimpleGUI==4.49.0
